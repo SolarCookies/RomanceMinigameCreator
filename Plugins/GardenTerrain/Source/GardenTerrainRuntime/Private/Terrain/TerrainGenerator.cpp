@@ -430,10 +430,6 @@ void ATerrainGenerator::FillSectionVertStructLOD(int32 SectionIndex)
 }
 
 
-void ATerrainGenerator::SaveTerrain(UTerrainSave Save)
-{
-	//Todo loop though the Terrain Section Actors and tell them to save to the Save Object
-}
 
 bool ATerrainGenerator::SetLODVertexData(int32 LOD, int32 LoopIter, int32 Index, int32 DivideFactor, FVertexData VertexData)
 {
