@@ -71,6 +71,8 @@ struct FMinigameObject
 	FVector Position;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FRotator Rotation;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool IsInvisible;
 };
 
 UCLASS(BlueprintType)
