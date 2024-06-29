@@ -61,6 +61,14 @@ enum class ELocation : uint8
 	TrenchGarden
 };
 
+//Creator Action Enum
+UENUM(BlueprintType)
+enum class EAction : uint8
+{
+	Place,
+	Delete
+};
+
 USTRUCT(BlueprintType)
 struct FMinigameObject
 {
@@ -73,6 +81,20 @@ struct FMinigameObject
 	FRotator Rotation;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool IsInvisible;
+};
+
+//Used for storing a history of edits made in the editor
+USTRUCT(BlueprintType)
+struct FCreatorAction
+{
+	GENERATED_BODY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	EAction Action;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FMinigameObject DeletedObject;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	AActor* PlacedObject;
+
 };
 
 UCLASS(BlueprintType)
