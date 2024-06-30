@@ -91,10 +91,7 @@ struct FCreatorAction
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EAction Action;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FMinigameObject DeletedObject;
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	AActor* PlacedObject;
-
+	FMinigameObject Object;
 };
 
 UCLASS(BlueprintType)

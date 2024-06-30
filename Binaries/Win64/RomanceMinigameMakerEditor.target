@@ -24780,6 +24780,10 @@
 			"Type": "UFS"
 		},
 		{
+			"Path": "$(ProjectDir)/Plugins/VE_Coins/VE_Coins.uplugin",
+			"Type": "UFS"
+		},
+		{
 			"Path": "$(ProjectDir)/RomanceMinigameMaker.uproject",
 			"Type": "UFS"
 		}
