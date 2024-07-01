@@ -58,3 +58,4 @@ DerivedDataCache/*
 .vsconfig
 .vsconfig
 Platforms/
+auto.json
