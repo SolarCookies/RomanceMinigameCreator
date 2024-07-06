@@ -81,6 +81,8 @@ struct FMinigameObject
 	FRotator Rotation;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool IsInvisible;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int TrackNum;
 };
 
 //Used for storing a history of edits made in the editor
@@ -93,6 +95,17 @@ struct FCreatorAction
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FMinigameObject Object;
 };
+
+USTRUCT(BlueprintType)
+struct FTrack
+{
+	GENERATED_BODY()
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FVector> Nodes;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float Speed;
+};
+
 
 UCLASS(BlueprintType)
 class ROMANCEMINIGAMEASSETRUNTIME_API URomanceMinigame : public UObject
