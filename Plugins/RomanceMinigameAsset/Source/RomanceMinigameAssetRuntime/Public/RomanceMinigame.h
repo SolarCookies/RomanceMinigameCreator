@@ -61,6 +61,15 @@ enum class ELocation : uint8
 	TrenchGarden
 };
 
+//Creator Mode Enum
+UENUM(BlueprintType)
+enum class ECreatorMode : uint8
+{
+	Object,
+	Track,
+	LinkObjectToTrack
+};
+
 //Creator Action Enum
 UENUM(BlueprintType)
 enum class EAction : uint8
@@ -83,6 +92,8 @@ struct FMinigameObject
 	bool IsInvisible;
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int TrackNum;
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	int StartNode;
 };
 
 //Used for storing a history of edits made in the editor
