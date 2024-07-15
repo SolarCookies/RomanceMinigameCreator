@@ -67,7 +67,8 @@ enum class ECreatorMode : uint8
 {
 	Object,
 	Track,
-	LinkObjectToTrack
+	LinkObjectToTrack,
+	Packet
 };
 
 //Creator Action Enum
