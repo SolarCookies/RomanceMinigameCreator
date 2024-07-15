@@ -27,6 +27,10 @@
 		{
 			"Name": "ScriptableToolsFramework",
 			"Enabled": true
+		},
+		{
+			"Name": "BlueprintFileUtils",
+			"Enabled": true
 		}
 	]
 }
