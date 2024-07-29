@@ -343,7 +343,6 @@ void ATerrainGenerator::FillGlobalVertexDataTimed()
 		GlobalVertexData[Index].Normals = Normal;
 	}
 
-	UE_LOG(LogTemp, Warning, TEXT("GlobalPropertiesPercentFilled: %f % "), ((float)GlobalXIter/ (float)MeshVertsPerSide) * 100.f);
 	GlobalXIter++;
 
 	// execute following when GlobalVertexData is filled
