@@ -3,7 +3,6 @@
 	"EngineAssociation": "5.4",
 	"Category": "",
 	"Description": "",
-	"Modules": [],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
@@ -37,6 +36,11 @@
 			"Name": "FileSDK",
 			"Enabled": true,
 			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/4f737815666c4e7dabf2043fb55a8419"
+		},
+		{
+			"Name": "RuntimeArchiver",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/product/2f22e9adc1dc4254a277aabb2320f3f9"
 		}
 	]
 }
