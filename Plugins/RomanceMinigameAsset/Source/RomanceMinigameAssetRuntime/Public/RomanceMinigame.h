@@ -8,6 +8,7 @@ enum class EObjectType : uint8
 {
 	//Null Object
 	Null,
+	//Standard Bomb
 	RedBomb,
 	//Sleepy Bomb You need to sneek past it or it will explode
 	OrangeBomb,
@@ -79,20 +80,27 @@ enum class EAction : uint8
 	Delete
 };
 
+//Struct that holds all the information for one minigame object
 USTRUCT(BlueprintType)
 struct FMinigameObject
 {
 	GENERATED_BODY()
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EObjectType ObjectType;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FVector Position;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FRotator Rotation;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool IsInvisible;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int TrackNum;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	int StartNode;
 };
@@ -102,20 +110,57 @@ USTRUCT(BlueprintType)
 struct FCreatorAction
 {
 	GENERATED_BODY()
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	EAction Action;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	FMinigameObject Object;
 };
 
+//Struct for storing the information of a fixed track objects travel
 USTRUCT(BlueprintType)
 struct FTrack
 {
 	GENERATED_BODY()
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FVector> Nodes;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float Speed;
+};
+
+UENUM(BlueprintType)
+enum class EMazeSize : uint8
+{
+	Small,
+	Medium,
+	Large,
+	Huge
+};
+
+//Holds all the combined information for an individual minigame
+USTRUCT(BlueprintType)
+struct FMinigame
+{
+	GENERATED_BODY()
+	
+	//The time limit in seconds
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	float TimeLimit;
+	
+	//The size of the maze
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	EMazeSize Size;
+	
+	//Array containing all the objects in the minigame
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FMinigameObject> Objects;
+	
+	//Array containing all the fixed tracks in the minigame
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FTrack> Tracks;
 };
 
 
