@@ -50,6 +50,14 @@ enum class EObjectType : uint8
 	Exit
 };
 
+//Game mode enum
+UENUM(BlueprintType)
+enum class EGameMode : uint8
+{
+	Create,
+	Play
+};
+
 //Location Enum
 UENUM(BlueprintType)
 enum class ELocation : uint8
