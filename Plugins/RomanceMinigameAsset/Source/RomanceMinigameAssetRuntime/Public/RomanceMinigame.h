@@ -169,6 +169,11 @@ struct FMinigame
 	//Array containing all the fixed tracks in the minigame
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FTrack> Tracks;
+
+	//Name of RomanceMinigameFolder
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Name;
+
 };
 
 
@@ -180,8 +185,22 @@ class ROMANCEMINIGAMEASSETRUNTIME_API URomanceMinigame : public UObject
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<FMinigameObject> Objects;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	ELocation Location;
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	float TimeLimit; //Time limit in seconds
+
+	//Array containing all the fixed tracks in the minigame
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TArray<FTrack> Tracks;
+
+	//Name of RomanceMinigameFolder
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FString Name;
+
+	//The size of the maze
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	EMazeSize Size;
 };

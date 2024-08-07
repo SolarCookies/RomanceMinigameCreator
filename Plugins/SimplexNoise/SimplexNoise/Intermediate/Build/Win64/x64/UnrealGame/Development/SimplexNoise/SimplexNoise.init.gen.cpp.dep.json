@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\mag11\\projects\\romanceminigamecreator\\plugins\\simplexnoise\\simplexnoise\\intermediate\\build\\win64\\unrealgame\\inc\\simplexnoise\\uht\\simplexnoise.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\mag11\\projects\\romanceminigamecreator\\intermediate\\build\\win64\\x64\\romanceminigamemaker\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderoldest.h.pch",
+        "Includes": [
+            "c:\\users\\mag11\\projects\\romanceminigamecreator\\plugins\\simplexnoise\\simplexnoise\\intermediate\\build\\win64\\x64\\unrealgame\\development\\simplexnoise\\definitions.simplexnoise.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

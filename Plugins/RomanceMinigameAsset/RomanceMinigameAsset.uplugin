@@ -30,6 +30,22 @@
 		{
 			"Name": "VE_Coins",
 			"Enabled": true
+		},
+		{
+			"Name": "EasyFileDialog",
+			"Enabled": true
+		},
+		{
+			"Name": "JsonBlueprintUtilities",
+			"Enabled": true
+		},
+		{
+			"Name": "VE_Area",
+			"Enabled": true
+		},
+		{
+			"Name": "GardenTerrain",
+			"Enabled": true
 		}
 	]
 }
